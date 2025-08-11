@@ -2,7 +2,6 @@
 version: '3.7'
 
 services:
-build: .
   myapp:
     build: .
     image: myapp:0.1.0

@@ -3,6 +3,7 @@ version: '3.7'
 
 services:
   myapp:
+    platform: linux/amd64
     build: .
     image: myapp:0.1.0
     container_name: myapp
@@ -16,8 +17,8 @@ services:
       UNIT: 1
       TIME_PERIOD: 1000
       CONTROL_TIME_PERIOD: 1000
-      TIMEOUT: 500
-      RETRIES: 1
+      TIMEOUT: 2000
+      RETRIES: 3
     tmpfs:
       - /temp:uid=5678,gid=5678
 networks:

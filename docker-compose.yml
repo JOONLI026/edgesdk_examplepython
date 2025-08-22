@@ -8,8 +8,8 @@ services:
     networks:
       - network1
     environment:
-      HOST: modbus_0  
-      PORT: 25002
+      HOST: 192.168.1.41 
+      PORT: 502
       UNIT: 1
       TIME_PERIOD: 1000
       CONTROL_TIME_PERIOD: 1000
